@@ -24,7 +24,7 @@ function Navbar() {
         <div>
             <div id="box"></div>
             <nav className="no-select">
-                <Link to={"/"}> <div className="logo">VotingDapp</div></Link>
+                <Link to={"/"}> <div className="logo">VotingDappV2</div></Link>
 
                 <div className="nav-menu">
                     <Box width="20" />
