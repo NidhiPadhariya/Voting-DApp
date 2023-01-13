@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import Web3 from "web3";
 import NeoToken from "../contracts/NeoToken.json";
 // import axios from 'axios';
-const defaultChainId = 1337;
+const defaultChainId = 80001;
 
 export const supportedNetworks = {
     1337: {
@@ -72,9 +72,9 @@ export function ConnectionProvider(props) {
             //     chain : supportedNetworks[chainId].name,
             //     symbol: supportedNetworks[chainId].tokenSymbol
             // }
-            
+
             // await axios.post('http://localhost:1234/api/v1/mail/sendmail',payLoad)
-            setConnectionState({ ...connectionState, web3, accounts, chainId, neoContract});
+            setConnectionState({ ...connectionState, web3, accounts, chainId, neoContract });
         } catch (e) {
             if (e.code === 4001) {
                 // eslint-disable-next-line 

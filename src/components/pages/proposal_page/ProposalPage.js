@@ -53,7 +53,7 @@ function ProposalPage() {
     }, [accounts, neoContract]);
 
     if (isLoading) {
-        return <Loading text='Connect your crypto wallet first!' />;
+        return <Loading text='Loading Proposals' />;
     }
 
     return (
